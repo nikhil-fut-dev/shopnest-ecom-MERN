@@ -1,5 +1,5 @@
-const Product = require('../models/Product');
-const cloudinary = require('../config/cloudinary');
+const Product = require("../models/Product");
+const cloudinary = require("../config/cloudinary");
 
 const getProducts = async (req, res) => {
   try {
@@ -16,7 +16,7 @@ const getProductById = async (req, res) => {
     if (product) {
       res.json(product);
     } else {
-      res.status(404).json({ message: 'Product not found' });
+      res.status(404).json({ message: "Product not found" });
     }
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -26,13 +26,18 @@ const getProductById = async (req, res) => {
 const createProduct = async (req, res) => {
   try {
     const { name, description, price, category, stock } = req.body;
-    let imageUrl = '';
+    let imageUrl = "";
     if (req.file) {
       const result = await cloudinary.uploader.upload(req.file.path);
       imageUrl = result.secure_url;
     }
     const product = new Product({
-      name, description, price, category, stock, imageUrl
+      name,
+      description,
+      price,
+      category,
+      stock,
+      imageUrl,
     });
     const createdProduct = await product.save();
     res.status(201).json(createdProduct);
@@ -59,7 +64,7 @@ const updateProduct = async (req, res) => {
       const updatedProduct = await product.save();
       res.json(updatedProduct);
     } else {
-      res.status(404).json({ message: 'Product not found' });
+      res.status(404).json({ message: "Product not found" });
     }
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -71,13 +76,19 @@ const deleteProduct = async (req, res) => {
     const product = await Product.findById(req.params.id);
     if (product) {
       await product.deleteOne();
-      res.json({ message: 'Product removed' });
+      res.json({ message: "Product removed" });
     } else {
-      res.status(404).json({ message: 'Product not found' });
+      res.status(404).json({ message: "Product not found" });
     }
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
-module.exports = { getProducts, getProductById, createProduct, updateProduct, deleteProduct };
+module.exports = {
+  getProducts,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};

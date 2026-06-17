@@ -25,7 +25,7 @@
 }
 
 .navbar-brand a::after {
-  content: '.';
+  content: ".";
   color: #f97316;
   font-size: 36px;
 }
@@ -36,7 +36,8 @@
   gap: 30px;
 }
 
-.navbar-links a, .navbar-links span {
+.navbar-links a,
+.navbar-links span {
   font-size: 15px;
   font-weight: 500;
   color: #a1a1aa;
@@ -48,7 +49,7 @@
 }
 
 .navbar-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;

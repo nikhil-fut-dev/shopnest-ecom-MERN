@@ -9,7 +9,7 @@
   background: #18181b;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 420px;
   display: flex;
@@ -21,7 +21,7 @@
 }
 
 .auth-form::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -50%;
@@ -32,8 +32,12 @@
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(50%); }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }
 
 .auth-form h2 {
