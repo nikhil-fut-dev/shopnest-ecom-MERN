@@ -16,12 +16,8 @@
             "header": [],
             "url": {
               "raw": "{{endpoint}}/",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                ""
-              ]
+              "host": ["{{endpoint}}"],
+              "path": [""]
             }
           },
           "response": []
@@ -42,14 +38,8 @@
             },
             "url": {
               "raw": "{{endpoint}}/api/auth/register",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                "api",
-                "auth",
-                "register"
-              ]
+              "host": ["{{endpoint}}"],
+              "path": ["api", "auth", "register"]
             }
           },
           "response": []
@@ -70,14 +60,8 @@
             },
             "url": {
               "raw": "{{endpoint}}/api/auth/login",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                "api",
-                "auth",
-                "login"
-              ]
+              "host": ["{{endpoint}}"],
+              "path": ["api", "auth", "login"]
             }
           },
           "response": []
@@ -111,14 +95,8 @@
             },
             "url": {
               "raw": "{{endpoint}}/api/auth/users",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                "api",
-                "auth",
-                "users"
-              ]
+              "host": ["{{endpoint}}"],
+              "path": ["api", "auth", "users"]
             }
           },
           "response": []
@@ -152,14 +130,8 @@
             },
             "url": {
               "raw": "{{endpoint}}/api/products/",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                "api",
-                "products",
-                ""
-              ]
+              "host": ["{{endpoint}}"],
+              "path": ["api", "products", ""]
             }
           },
           "response": []
@@ -188,14 +160,8 @@
             },
             "url": {
               "raw": "{{endpoint}}/api/products/69e88d27e51103fdd44cb50c",
-              "host": [
-                "{{endpoint}}"
-              ],
-              "path": [
-                "api",
-                "products",
-                "69e88d27e51103fdd44cb50c"
-              ]
+              "host": ["{{endpoint}}"],
+              "path": ["api", "products", "69e88d27e51103fdd44cb50c"]
             }
           },
           "response": []
@@ -258,15 +224,9 @@
             "url": {
               "raw": "http://localhost:5000/api/products/",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "products",
-                ""
-              ]
+              "path": ["api", "products", ""]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/products' \\\r\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\r\n--form 'name=\"Product Name\"' \\\r\n--form 'description=\"Product Description\"' \\\r\n--form 'price=\"99.99\"' \\\r\n--form 'category=\"Electronics\"' \\\r\n--form 'stock=\"50\"' \\\r\n--form 'image=@\"/path/to/image.jpg\"'"
           },
@@ -315,15 +275,9 @@
             "url": {
               "raw": "http://localhost:5000/api/products/69e88d27e51103fdd44cb50c",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "products",
-                "69e88d27e51103fdd44cb50c"
-              ]
+              "path": ["api", "products", "69e88d27e51103fdd44cb50c"]
             },
             "description": "Generated from cURL: curl --location --request PUT 'http://localhost:5000/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
           },
@@ -372,15 +326,9 @@
             "url": {
               "raw": "http://localhost:5000/api/products/69e88d27e51103fdd44cb50c",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "products",
-                "69e88d27e51103fdd44cb50c"
-              ]
+              "path": ["api", "products", "69e88d27e51103fdd44cb50c"]
             },
             "description": "Generated from cURL: curl --location --request PUT 'http://localhost:5000/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
           },
@@ -427,14 +375,9 @@
             "url": {
               "raw": "http://localhost:5000/api/orders",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "orders"
-              ]
+              "path": ["api", "orders"]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/orders' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"items\": [\n    {\n      \"productId\": \"PRODUCT_ID_1\",\n      \"quantity\": 2,\n      \"price\": 50.00\n    },\n    {\n      \"productId\": \"PRODUCT_ID_2\",\n      \"quantity\": 1,\n      \"price\": 75.00\n    }\n  ],\n  \"totalAmount\": 175.00,\n  \"address\": \"123 Main Street, City, Country, 12345\",\n  \"paymentId\": \"PAYMENT_ID_12345\"\n}'"
           },
@@ -479,14 +422,9 @@
             "url": {
               "raw": "http://localhost:5000/api/orders",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "orders"
-              ]
+              "path": ["api", "orders"]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/orders' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"items\": [\n    {\n      \"productId\": \"PRODUCT_ID_1\",\n      \"quantity\": 2,\n      \"price\": 50.00\n    },\n    {\n      \"productId\": \"PRODUCT_ID_2\",\n      \"quantity\": 1,\n      \"price\": 75.00\n    }\n  ],\n  \"totalAmount\": 175.00,\n  \"address\": \"123 Main Street, City, Country, 12345\",\n  \"paymentId\": \"PAYMENT_ID_12345\"\n}'"
           },
@@ -528,16 +466,9 @@
             "url": {
               "raw": "http://localhost:5000/api/orders/69e89c7ce26672d7f8d0a6ec/status",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "orders",
-                "69e89c7ce26672d7f8d0a6ec",
-                "status"
-              ]
+              "path": ["api", "orders", "69e89c7ce26672d7f8d0a6ec", "status"]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/orders' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"items\": [\n    {\n      \"productId\": \"PRODUCT_ID_1\",\n      \"quantity\": 2,\n      \"price\": 50.00\n    },\n    {\n      \"productId\": \"PRODUCT_ID_2\",\n      \"quantity\": 1,\n      \"price\": 75.00\n    }\n  ],\n  \"totalAmount\": 175.00,\n  \"address\": \"123 Main Street, City, Country, 12345\",\n  \"paymentId\": \"PAYMENT_ID_12345\"\n}'"
           },
@@ -582,15 +513,9 @@
             "url": {
               "raw": "http://localhost:5000/api/orders/myorders",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "orders",
-                "myorders"
-              ]
+              "path": ["api", "orders", "myorders"]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/orders' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"items\": [\n    {\n      \"productId\": \"PRODUCT_ID_1\",\n      \"quantity\": 2,\n      \"price\": 50.00\n    },\n    {\n      \"productId\": \"PRODUCT_ID_2\",\n      \"quantity\": 1,\n      \"price\": 75.00\n    }\n  ],\n  \"totalAmount\": 175.00,\n  \"address\": \"123 Main Street, City, Country, 12345\",\n  \"paymentId\": \"PAYMENT_ID_12345\"\n}'"
           },
@@ -640,15 +565,9 @@
             "url": {
               "raw": "http://localhost:5000/api/analytics/",
               "protocol": "http",
-              "host": [
-                "localhost"
-              ],
+              "host": ["localhost"],
               "port": "5000",
-              "path": [
-                "api",
-                "analytics",
-                ""
-              ]
+              "path": ["api", "analytics", ""]
             },
             "description": "Generated from cURL: curl --location 'http://localhost:5000/api/orders' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--header 'Content-Type: application/json' \\\n--data '{\n  \"items\": [\n    {\n      \"productId\": \"PRODUCT_ID_1\",\n      \"quantity\": 2,\n      \"price\": 50.00\n    },\n    {\n      \"productId\": \"PRODUCT_ID_2\",\n      \"quantity\": 1,\n      \"price\": 75.00\n    }\n  ],\n  \"totalAmount\": 175.00,\n  \"address\": \"123 Main Street, City, Country, 12345\",\n  \"paymentId\": \"PAYMENT_ID_12345\"\n}'"
           },
@@ -664,9 +583,7 @@
         "type": "text/javascript",
         "packages": {},
         "requests": {},
-        "exec": [
-          ""
-        ]
+        "exec": [""]
       }
     },
     {
@@ -675,9 +592,7 @@
         "type": "text/javascript",
         "packages": {},
         "requests": {},
-        "exec": [
-          ""
-        ]
+        "exec": [""]
       }
     }
   ],
