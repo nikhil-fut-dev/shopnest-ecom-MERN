@@ -1,12 +1,11 @@
 import React, { useContext, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -14,6 +13,13 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", menuOpen);
+
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, [menuOpen]);
 
   const categories = [
     { label: "Electronics", path: "/electronics" },
