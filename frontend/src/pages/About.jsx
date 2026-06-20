@@ -27,11 +27,11 @@ const About = () => {
   return (
     <div style={containerStyle}>
       <img
-        src="/dp.jpeg"
-        alt="@theshivanshvasu"
+        src="/CbnkLogo4.jpeg"
+        alt="@nikhilkumar"
         style={{
-          width: "180px",
-          height: "180px",
+          width: "200px",
+          height: "200px",
           borderRadius: "50%",
           objectFit: "cover",
           border: "4px solid #f97316",
