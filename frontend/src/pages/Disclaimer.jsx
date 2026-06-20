@@ -27,7 +27,7 @@ const Disclaimer = () => {
 
       <p style={{ marginBottom: "20px" }}>
         The data, interfaces, and graphical components represented across the
-        ShopNest domain strictly act uniquely as an educational development
+        CBNK domain strictly act uniquely as an educational development
         platform. This codebase models rigorous application structures and
         architectures for purely demonstrative, portfolio-oriented engineering
         usage.
@@ -37,7 +37,7 @@ const Disclaimer = () => {
         1. Accuracy of Materials
       </h4>
       <p style={{ marginBottom: "15px" }}>
-        The materials spanning the ShopNest interface may heavily include
+        The materials spanning the CBNK interface may heavily include
         dynamic technical, typographical, or dummy photographic elements.
         Product matrices mapped in the DB pipeline do absolutely not correlate
         to strictly real physical outputs and are safely populated via generic
@@ -58,7 +58,7 @@ const Disclaimer = () => {
         3. External Binding Links
       </h4>
       <p style={{ marginBottom: "15px" }}>
-        ShopNest operates completely independent domains and takes strictly zero
+        CBNK operates completely independent domains and takes strictly zero
         absolute parameter responsibility over the specific contents or
         behaviors populated via external routing anchors generated implicitly by
         third-party configurations.

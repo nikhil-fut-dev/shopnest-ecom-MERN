@@ -15,11 +15,11 @@ const importData = async () => {
     await Product.deleteMany();
 
     const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash("Nikhilshopnest@#$%983950", salt);
+    const hashedPassword = await bcrypt.hash("Nikhilcbnk@#$%983950", salt);
 
     const adminUser = await User.create({
       name: "Nikhil",
-      email: "nikhil@shopnest.com",
+      email: "nikhil@cbnk.com",
       password: hashedPassword,
       role: "admin",
     });

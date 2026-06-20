@@ -14,6 +14,10 @@ import OrderSuccess from "./pages/OrderSuccess";
 import About from "./pages/About";
 import Disclaimer from "./pages/Disclaimer";
 import ReturnPolicy from "./pages/ReturnPolicy";
+import Electronics from "./pages/Electronics";
+import Fashion from "./pages/Fashion";
+import HomeCategory from "./pages/HomeCategory";
+import Accessories from "./pages/Accessories";
 import AdminDashboard from "./admin/AdminDashboard";
 import AddProduct from "./admin/AddProduct";
 import AdminProducts from "./admin/AdminProducts";
@@ -29,6 +33,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/electronics" element={<Electronics />} />
+          <Route path="/fashion" element={<Fashion />} />
+          <Route path="/home-category" element={<HomeCategory />} />
+          <Route path="/accessories" element={<Accessories />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />

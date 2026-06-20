@@ -48,7 +48,7 @@ const Checkout = () => {
         key: "rzp_live_T1wHhrRYDXSSbN", // Student dummy fallback
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "ShopNest",
+        name: "CBNK",
         description: "Test Transaction",
         order_id: orderData.id,
         handler: async function (response) {
