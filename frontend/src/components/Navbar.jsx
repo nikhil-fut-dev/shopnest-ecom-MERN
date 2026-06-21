@@ -13,6 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [categoryOpen, setCategoryOpen] = useState(false);
   useEffect(() => {
     document.body.classList.toggle("menu-open", menuOpen);
 
@@ -42,7 +43,10 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setCategoryOpen(false);
+  };
 
   return (
     <nav className="navbar" aria-label="Main navigation">
@@ -81,18 +85,20 @@ const Navbar = () => {
             <button
               className={`category-trigger ${
                 isCategoryActive ? "is-active" : ""
-              }`}
+              } ${categoryOpen ? "open" : ""}`}
               type="button"
               aria-haspopup="true"
+              onClick={() => setCategoryOpen(!categoryOpen)}
             >
               Categories
-              <span className="chevron" aria-hidden="true" />
+              <span className="chevron" />
             </button>
-            <div className="category-menu">
+
+            <div className={`category-menu ${categoryOpen ? "show" : ""}`}>
               {categories.map((category) => (
                 <NavLink
-                  to={category.path}
                   key={category.path}
+                  to={category.path}
                   onClick={closeMenu}
                 >
                   {category.label}
